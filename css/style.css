@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181818;
+    color: #fff;
+}
+
+header {
+    background: #111;
+    color: #e53935;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #e53935;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline;
+}
+
+nav a {
+    color: #e53935;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: #222;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.1);
+}
+
+h2 {
+    color: #e53935;
+    margin-top: 0;
+}
+
+.projetos-lista {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.projeto-card {
+    background: #181818;
+    border: 1px solid #e53935;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 220px;
+}
+
+footer {
+    background: #111;
+    color: #e53935;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid #e53935;
+    margin-top: 2rem;
+}
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e53935;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    background: #222;
+    border-radius: 30px;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(229,57,53,0.10);
+    transition: background 0.2s;
+}
+
+.skill-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #333;
+    padding: 4px;
+    margin-right: 10px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    object-fit: contain;
+}
+
+/* Cores específicas para cada tecnologia */
+.skills-list li:nth-child(1) .skill-icon { background: #f7df1e; }    /* JavaScript */
+.skills-list li:nth-child(2) .skill-icon { background: #ffffff; }    /* Java */
+.skills-list li:nth-child(3) .skill-icon { background: #00ADD8; }    /* Golang */
+.skills-list li:nth-child(4) .skill-icon { background: #e34c26; }    /* HTML & CSS */
+.skills-list li:nth-child(5) .skill-icon { background: #61dafb; }    /* React */
+.skills-list li:nth-child(6) .skill-icon { background: #339933; }    /* Node.js */
+.skills-list li:nth-child(7) .skill-icon { background: #777bb4; }    /* PHP */
+.skills-list li:nth-child(8) .skill-icon { background: #ffffff; }    /* MySQL */
+.skills-list li:nth-child(9) .skill-icon { background: #3776ab; }    /* Python */
+.skills-list li:nth-child(10) .skill-icon { background: #f34f29; }   /* Git */
+.skills-list li:nth-child(11) .skill-icon { background: #ffffff; }   /* React Native */
+.skills-list li:nth-child(12) .skill-icon { background: #ffffff; }   /* Unity */
+
+/* Efeito hover */
+.skills-list li:hover {
+    background: #e53935;
+    color: #fff;
+}
+
+.skills-list li:hover .skill-icon {
+    transform: scale(1.15) rotate(-8deg);
+    box-shadow: 0 4px 16px rgba(229,57,53,0.25);
+    background: #fff;
+}
+.social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 2rem 0;
+    flex-wrap: wrap;
+}
+
+.social-list li {
+    display: flex;
+    align-items: center;
+    background: #222;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(229,57,53,0.10);
+    transition: background 0.2s, color 0.2s;
+}
+
+.social-list li:hover {
+    background: #e53935;
+    color: #fff;
+}
+
+.social-list li:hover .social-icon {
+    transform: scale(1.15) rotate(-8deg);
+    box-shadow: 0 4px 16px rgba(229,57,53,0.25);
+    background: #fff;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #333;
+    padding: 4px;
+    margin-right: 12px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    object-fit: contain;
+}
+
+/* Cores específicas para cada rede social */
+.social-list li:nth-child(1) .social-icon { background: #0077b5; }   /* LinkedIn */
+.social-list li:nth-child(2) .social-icon { background: #ffffff; }   /* GitHub */
+.social-list li:nth-child(3) .social-icon { background: #ffffff; }   /* Instagram */
+.social-list li:nth-child(4) .social-icon { background: #ffffff; }   /* Twitter */
+.social-list li:nth-child(5) .social-icon { background: #ffffff; }   /* YouTube */
+.social-list li:nth-child(6) .social-icon { background: #ffffff; }   /* TikTok */
+.social-list li:nth-child(7) .social-icon { background: #ffffff; }   /* Email (Gmail/Outlook) */
+
+/* ...existing code... */
+
+/* Carrossel de certificados */
+.certificados-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 1rem 0;
+    list-style: none;
+    margin: 0;
+    scroll-snap-type: x mandatory;
+}
+
+.certificados-list li {
+    min-width: 260px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 1rem;
+    gap: 1rem;
+    scroll-snap-align: start;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificados-list li:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.certificados-list li {
+    min-width: 340px;
+    max-width: 380px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem 1.5rem 1rem;
+    gap: 1.5rem;
+    scroll-snap-align: start;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificado-icon {
+    width: 180px;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: transparent; /* Deixa o fundo transparente */
+    padding: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.certificados-list span {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    word-break: break-word;
+}
+/* ...existing code... */
+.projetos-lista {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.projeto-card {
+    background: #020202;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.projeto-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.projeto-img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    height: 180px;
+    object-fit: cover;
+}
+
+.projeto-info {
+    padding: 1rem;
+}
+
+.projeto-linguagens {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.projeto-linguagens .skill-icon {
+    width: 28px;
+    height: 28px;
+}
+/* ...existing code... */
+
+/* Cores para os ícones das linguagens nos cards dos projetos */
+.projeto-linguagens .skill-icon[alt="JavaScript"]    { background: #f7df1e; }
+.projeto-linguagens .skill-icon[alt="Java"]          { background: #fff; }
+.projeto-linguagens .skill-icon[alt="Golang"]        { background: #00ADD8; }
+.projeto-linguagens .skill-icon[alt="HTML & CSS"]    { background: #e34c26; }
+.projeto-linguagens .skill-icon[alt="React"]         { background: #61dafb; }
+.projeto-linguagens .skill-icon[alt="Node.js"]       { background: #339933; }
+.projeto-linguagens .skill-icon[alt="PHP"]           { background: #777bb4; }
+.projeto-linguagens .skill-icon[alt="MySQL"]         { background: #fff; }
+.projeto-linguagens .skill-icon[alt="Python"]        { background: #3776ab; }
+.projeto-linguagens .skill-icon[alt="Git"]           { background: #f34f29; }
+.projeto-linguagens .skill-icon[alt="Unity"]         { background: #fff; }
+
