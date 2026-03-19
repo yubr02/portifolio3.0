@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #181818;
+    background: linear-gradient(180deg, #090b12 0%, #121b2a 45%, #191e33 100%);
     color: #fff;
 }
 
@@ -14,37 +14,44 @@ img {
 
 /* ====== HEADER ====== */
 header {
-    background: #111;
-    color: #e53935;
+    background: rgba(10, 10, 20, 0.9);
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 2px solid #e53935;
+    border-bottom: 1px solid rgba(229,57,53,0.25);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+    backdrop-filter: blur(4px);
     flex-wrap: wrap;
 }
 
 .logo h1 {
     margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #f3f4f7;
+    letter-spacing: 0.15px;
 }
 
 nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 nav a {
-    color: #e53935;
+    color: #ff9d8f;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
+    font-weight: 600;
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
+    transition: 0.2s;
 }
 
-nav a:hover {
+nav a:hover, nav a:focus {
+    background: rgba(229,57,53,0.2);
     color: #fff;
 }
 
@@ -54,16 +61,27 @@ main {
 }
 
 section {
-    margin-bottom: 2rem;
-    background: #222;
-    border-radius: 8px;
+    margin-bottom: 1.8rem;
+    background: linear-gradient(130deg, rgba(10, 10, 20, 0.92), rgba(25, 31, 52, 0.9));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(229,57,53,0.1);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.24);
 }
 
 h2 {
-    color: #e53935;
+    color: #ff9d8f;
     margin-top: 0;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    font-size: 1.35rem;
+}
+
+.sobre-grid {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
 }
 
 /* ====== PERFIL ====== */
@@ -210,51 +228,66 @@ h2 {
 
 /* ====== PROJETOS ====== */
 .projetos-lista {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
     justify-content: center;
 }
 
 .projeto-card {
-    flex: 1 1 280px;
-    max-width: 320px;
-    background: #020202;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+    background: #111827;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: default;
 }
 
 .projeto-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
 }
 
 .projeto-img {
     width: 100%;
-    border-radius: 12px 12px 0 0;
-    height: 180px;
+    border-radius: 0;
+    height: 170px;
     object-fit: cover;
+    background: #111;
 }
 
 .projeto-info {
-    padding: 1rem;
+    padding: 0.9rem 1rem 1rem;
+    color: #f4f4f5;
+}
+
+.projeto-info h3 {
+    margin: 0;
+    margin-bottom: 0.4rem;
+    color: #ff8f7b;
+}
+
+.projeto-info p {
+    margin: 0;
+    color: #d8d8de;
+    line-height: 1.45;
 }
 
 .projeto-linguagens {
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
 /* ====== FOOTER ====== */
 footer {
-    background: #111;
-    color: #e53935;
+    background: #090b14;
+    color: #ff9d8f;
     text-align: center;
     padding: 1rem 0;
-    border-top: 2px solid #e53935;
+    border-top: 1px solid rgba(255, 157, 143, 0.25);
     margin-top: 2rem;
 }
 
@@ -320,7 +353,7 @@ footer {
 .projeto-linguagens .skill-icon[alt="MySQL"] { background: #fff; } 
 .projeto-linguagens .skill-icon[alt="Python"] { background: #3776ab; }
 .projeto-linguagens .skill-icon[alt="Git"] { background: #f34f29; } 
-.projeto-linguagens .skill-icon[alt="Unity"] {backgroud:#ffffff; }
+.projeto-linguagens .skill-icon[alt="Unity"] {background:#ffffff; }
 
 /* Cores específicas para cada rede social */ 
 .social-list li:nth-child(1) .social-icon { background: #0077b5; } /* LinkedIn */
