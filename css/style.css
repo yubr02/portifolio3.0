@@ -377,3 +377,40 @@ footer {
 .skills-list li:nth-child(10) .skill-icon { background: #f34f29; } /* Git */ 
 .skills-list li:nth-child(11) .skill-icon { background: #ffffff; } /* React Native */ 
 .skills-list li:nth-child(12) .skill-icon { background: #ffffff; } /* Unity */
+
+/* Corrige as cores das tecnologias sem depender da posiÃ§Ã£o na lista */
+.skills-list li .skill-icon[alt="JavaScript"],
+.projeto-linguagens .skill-icon[alt="JavaScript"] { background: #f7df1e; }
+
+.skills-list li .skill-icon[alt="Java"],
+.projeto-linguagens .skill-icon[alt="Java"] { background: #f89820; }
+
+.skills-list li .skill-icon[alt="Golang"],
+.projeto-linguagens .skill-icon[alt="Golang"] { background: #00add8; }
+
+.skills-list li .skill-icon[alt="HTML & CSS"],
+.projeto-linguagens .skill-icon[alt="HTML & CSS"] { background: #e34f26; }
+
+.skills-list li .skill-icon[alt="React"],
+.projeto-linguagens .skill-icon[alt="React"] { background: #61dafb; }
+
+.skills-list li .skill-icon[alt="Node.js"],
+.projeto-linguagens .skill-icon[alt="Node.js"] { background: #339933; }
+
+.skills-list li .skill-icon[alt="PHP"],
+.projeto-linguagens .skill-icon[alt="PHP"] { background: #777bb4; }
+
+.skills-list li .skill-icon[alt="MySQL"],
+.projeto-linguagens .skill-icon[alt="MySQL"] { background: #00758f; }
+
+.skills-list li .skill-icon[alt="Python"],
+.projeto-linguagens .skill-icon[alt="Python"] { background: #3776ab; }
+
+.skills-list li .skill-icon[alt="Git"],
+.projeto-linguagens .skill-icon[alt="Git"] { background: #f05032; }
+
+.skills-list li .skill-icon[alt="React Native"],
+.projeto-linguagens .skill-icon[alt="React Native"] { background: #61dafb; }
+
+.skills-list li .skill-icon[alt="Unity"],
+.projeto-linguagens .skill-icon[alt="Unity"] { background: #ffffff; }
