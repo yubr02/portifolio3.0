@@ -1,191 +1,334 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Matheus Desenvolvedor Full Stack</title>
+    <title>Matheus | Portfolio Full Stack</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span></span>
-            <h1>Matheus - Desenvolvedor Full Stack | Portfólio</h1>
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-kicker">Portfolio</span>
+            <h1>Matheus Santos Carvalho</h1>
         </div>
-        <nav>
-            <a href="#sobre">Sobre Mim</a>
+        <nav class="site-nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#mindset">Mindset</a>
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
+
     <main>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <div class="sobre-grid">
+        <section id="sobre" class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Desenvolvedor Full Stack em evolucao constante</p>
+                <h2>Construo interfaces claras, APIs solidas e projetos com foco em utilidade real.</h2>
+                <p class="hero-text">
+                    Sou Matheus, estudante de Engenharia de Software e desenvolvedor com foco em
+                    resolver problemas de forma pratica. Gosto de entender o negocio, organizar a
+                    base tecnica e transformar ideia em produto funcional.
+                </p>
+                <div class="hero-highlights">
+                    <span>Front-end</span>
+                    <span>Back-end</span>
+                    <span>WordPress</span>
+                    <span>IA aplicada</span>
+                </div>
+            </div>
+            <div class="hero-panel">
                 <img src="foto/minha-foto.jpg" alt="Foto de Matheus" class="foto-perfil">
-                <div>
-                    <p>Oi! Eu sou o Matheus e gosto muito de tecnologia, principalmente de entender como as coisas funcionam por trás da tela. Foi essa curiosidade que me levou para a área de programação.</p>
-                    <p>Meu primeiro projeto foi o FarmaExpress, uma plataforma criada para ajudar pessoas com dificuldade de locomoção a terem acesso a medicamentos. Também desenvolvi um sistema PDV para a empresa onde trabalho, onde atuo com suporte técnico em TI.</p>
-                    <p>Atualmente curso Engenharia de Software e estou sempre buscando aprender mais, estudando tecnologias como Java e Golang. Gosto de colocar a mão na massa e criar soluções que realmente sejam úteis no dia a dia.</p> </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Linguagens & Frameworks</h2>
-            <ul class="skills-list">
-                <li><img src="src/icons/javascript.png" alt="JavaScript" class="skill-icon">JavaScript</li>
-                <li><img src="src/icons/java.png" alt="Java" class="skill-icon">Java</li>
-                <li><img src="src/icons/go.png" alt="Golang" class="skill-icon">Golang</li>
-                <li><img src="src/icons/html5.png" alt="HTML & CSS" class="skill-icon">HTML & CSS</li>
-                <li><img src="src/icons/react.png" alt="React" class="skill-icon">React</li>
-                <li><img src="src/icons/php.png" alt="PHP" class="skill-icon">PHP</li>
-                <li><img src="src/icons/mysql.png" alt="MySQL" class="skill-icon">MySQL</li>
-                <li><img src="src/icons/python.png" alt="Python" class="skill-icon">Python</li>
-                <li><img src="src/icons/git.png" alt="Git" class="skill-icon">Git</li>
-            </ul>
-        </section>
-
-        <section id="certificados">
-            <h2>Certificados</h2>
-            <ul class="certificados-list">
-                <li>
-                    <a href="src/certificados/certificado go.pdf" target="_blank"><img src="src/certificados/certificado go-1.png" alt="Formação golang - udemy" class="certificado-icon"></a>
-                    <span>Formação Golang - Udemy</span>
-                </li>
-                <li>
-                    <a href="src/certificados/certificado Power BI (1).pdf" target="_blank"><img src="src/certificados/certificado Power BI -1.png" alt="Power BI Completo" class="certificado-icon"></a>
-                    <span>Power BI Completo - Santander Open Academy</span>
-                </li>
-                <li>
-                    <a href="src/certificados/certificados python (3).pdf" target="_blank"><img src="src/certificados/certificados python -1.png" alt="Python" class="certificado-icon"></a>
-                    <span>Python - Santander Open Academy</span>
-                </li>
-                <li>
-                    <a href="src/certificados/wordpress.pdf" target="_blank"><img src="src/certificados/wordpress.jpg" alt="React" class="certificado-icon"></a>
-                    <span>WordPress com Elementor </span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div class="projetos-lista">
-                <div class="projeto-card">
-                    <video src="src/projetos/farmaexpress.mp4" class="projeto-img" autoplay loop muted playsinline></video>
-                    <div class="projeto-info">
-                        <h3>FarmaExpress</h3>
-                        <p>Plataforma para facilitar o acesso a medicamentos e agendamento de entrega.</p>
-                        <div class="projeto-linguagens">
-                            <img src="src/icons/html5.png" alt="HTML & CSS" title="HTML & CSS" class="skill-icon">
-                            <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript " class="skill-icon">
-                            <img src="src/icons/python.png" alt="Python" title="Python" class="skill-icon">
-                            <img src="src/icons/php.png" alt="PHP" title="PHP" class="skill-icon">
-                            <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
-                        </div>
-                    </div>
+                <div class="hero-card">
+                    <p class="hero-card-title">Foco atual</p>
+                    <p>Java, Golang, React, APIs, automacao e projetos com impacto real no dia a dia.</p>
                 </div>
-                <div class="projeto-card">
-                    <video src="src/projetos/portifolio.mp4" class="projeto-img" autoplay loop muted playsinline></video>
-                    <div class="projeto-info">
-                        <h3>Portfólio Pessoal</h3>
-                        <p>Site responsivo em React para apresentar projetos, habilidades e experiência profissional.</p>
-                        <div class="projeto-linguagens">
-                            <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
-                            <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript" class="skill-icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card">
-                    <video src="src/projetos/todolist.mp4" class="projeto-img" autoplay loop muted playsinline></video>
-                    <div class="projeto-info">
-                        <h3>Lista de Tarefas</h3>
-                        <p>App CRUD com PHP & MySQL para gerenciamento de tarefas diárias.</p>
-                        <div class="projeto-linguagens">
-                            <img src="src/icons/php.png" alt="PHP" title="PHP" class="skill-icon">
-                            <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card">
-                    <video src="src/projetos/SGV Dashboard.mp4" class="projeto-img" autoplay loop muted playsinline></video>
-                    <div class="projeto-info">
-                        <h3>Dashboard Financeiro</h3>
-                        <p>Painel analítico com gráficos de vendas para monitoramento de performance com Sprig Boot.</p>
-                        <div class="projeto-linguagens">
-                            <img src="src/icons/java.png" alt="Java" title="Java" class="skill-icon">
-                            <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
-                            <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card">
-                    <video src="src/projetos/Pedidos Fast.mp4" class="projeto-img" autoplay loop muted playsinline></video>
-                    <div class="projeto-info">
-                        <h3>API de Agendamentos</h3>
-                        <p>API REST com Golang para gerenciamento de horários e usuários com o Front em React.</p>
-                        <div class="projeto-linguagens">
-                            <img src="src/icons/go.png" alt="Golang" title="Golang" class="skill-icon">
-                            <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
-                            <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card">
-                    <video src="src/projetos/Login Seguro JWT.mp4" class="projeto-img" autoplay loop muted playsinline></video>
-                    <div class="projeto-info">
-                        <h3>Login Seguro JWT</h3>
-                        <p>API REST com JWT para login seguro usando Golang e React no front-end.</p>
-                        <div class="projeto-linguagens">
-                            <img src="src/icons/go.png" alt="Golang" title="Golang" class="skill-icon">
-                            <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
-                            <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
-                        </div>
-                    </div>
+                <div class="hero-card">
+                    <p class="hero-card-title">Objetivo</p>
+                    <p>Apresentar experiencia tecnica com mais clareza para recrutadores e parceiros.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato comigo para colaborações ou dúvidas!</p>
-   <ul class="social-list">
-    <li>
-        <a href="https://www.linkedin.com/in/matheus-santos-carvalho-88a610338" target="_blank">
-            <img src="src/redes sociais/link.png" alt="LinkedIn" class="social-icon">
-        </a>
-    </li>
-    <li>
-        <a href="https://github.com/yubr02" target="_blank">
-            <img src="src/redes sociais/github.png" alt="GitHub" class="social-icon">
-        </a>
-    </li>
-    <li>
-        <a href="https://www.instagram.com/pitocodev" target="_blank">
-            <img src="src/redes sociais/instagram.png" alt="Instagram" class="social-icon">
-        </a>
-    </li>
-    <li>
-        <a href="https://x.com/Pitocodev" target="_blank">
-            <img src="src/redes sociais/x.png" alt="Twitter" class="social-icon">
-        </a>
-    </li>
-    <li>
-        <a href="https://www.youtube.com/@moon6948" target="_blank">
-            <img src="src/redes sociais/youtube.png" alt="YouTube" class="social-icon">
-        </a>
-    </li>
-    
-    <li>
-        <a href="mailto:matheus.sa.ca@hotmail.com" target="_blank">
-            <img src="src/redes sociais/out.png" alt="Email" class="social-icon">
-        </a>
-    </li>
-</ul>
-</section>
+        <section id="skills" class="content-section">
+            <div class="section-heading">
+                <p class="section-kicker">Stack organizada</p>
+                <h2>Linguagens e frameworks separados por area</h2>
+            </div>
+
+            <div class="skill-groups">
+                <article class="info-card">
+                    <h3>Front-end</h3>
+                    <ul class="skills-list">
+                        <li><img src="src/icons/react.png" alt="React" class="skill-icon">React</li>
+                        <li><img src="src/icons/javascript.png" alt="JavaScript" class="skill-icon">JavaScript</li>
+                        <li><img src="src/icons/html5.png" alt="HTML & CSS" class="skill-icon">HTML e CSS</li>
+                    </ul>
+                </article>
+
+                <article class="info-card">
+                    <h3>Back-end</h3>
+                    <ul class="skills-list">
+                        <li><img src="src/icons/go.png" alt="Golang" class="skill-icon">Golang</li>
+                        <li><img src="src/icons/java.png" alt="Java" class="skill-icon">Java</li>
+                        <li><img src="src/icons/php.png" alt="PHP" class="skill-icon">PHP</li>
+                        <li><img src="src/icons/python.png" alt="Python" class="skill-icon">Python</li>
+                        <li><img src="src/icons/mysql.png" alt="MySQL" class="skill-icon">MySQL</li>
+                    </ul>
+                </article>
+
+                <article class="info-card">
+                    <h3>Ferramentas e apoio</h3>
+                    <ul class="skills-list">
+                        <li><img src="src/icons/git.png" alt="Git" class="skill-icon">Git e GitHub</li>
+                        <li><img src="src/icons/python.png" alt="Python" class="skill-icon">IA com Python</li>
+                        <li><img src="src/icons/react.png" alt="React" class="skill-icon">WordPress e Elementor</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="cursos" class="content-section">
+            <div class="section-heading">
+                <p class="section-kicker">Formacao continua</p>
+                <h2>Cursos organizados por instituicao</h2>
+            </div>
+
+            <div class="course-grid">
+                <article class="course-card">
+                    <h3>Udemy</h3>
+                    <ul>
+                        <li>Golang</li>
+                        <li>Java</li>
+                        <li>Git e GitHub</li>
+                        <li>React, JavaScript, HTML e CSS</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>NLP</li>
+                        <li>IA Generativa</li>
+                        <li>Agentes de IA</li>
+                        <li>Python para IA</li>
+                    </ul>
+                </article>
+
+                <article class="course-card">
+                    <h3>Santander Open Academy</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                    </ul>
+                </article>
+
+                <article class="course-card">
+                    <h3>Microsoft Learn</h3>
+                    <ul>
+                        <li>DevOps Azure</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="mindset" class="content-section">
+            <div class="section-heading">
+                <p class="section-kicker">Como penso como dev</p>
+                <h2>Minha forma de construir e evoluir software</h2>
+            </div>
+
+            <div class="mindset-grid">
+                <article class="mindset-card">
+                    <h3>Penso no problema antes da tecnologia</h3>
+                    <p>Busco entender a dor real, o fluxo do usuario e o objetivo do projeto antes de escolher a implementacao.</p>
+                </article>
+                <article class="mindset-card">
+                    <h3>Valorizo organizacao e clareza</h3>
+                    <p>Prefiro codigo legivel, estrutura consistente e interface intuitiva para facilitar manutencao e crescimento.</p>
+                </article>
+                <article class="mindset-card">
+                    <h3>Aprendo rapido e aplico em pratica</h3>
+                    <p>Transformo estudo em projeto real, o que acelera meu aprendizado em back-end, front-end e IA.</p>
+                </article>
+                <article class="mindset-card">
+                    <h3>Busco entregar algo util</h3>
+                    <p>Meu foco nao e apenas funcionar. Quero que a solucao seja confiavel, objetiva e gere valor de verdade.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projetos" class="content-section">
+            <div class="section-heading">
+                <p class="section-kicker">Portifolio organizado</p>
+                <h2>Projetos separados por especialidade</h2>
+            </div>
+
+            <div class="project-group">
+                <div class="group-header">
+                    <h3>Front-end</h3>
+                    <p>Interfaces, experiencia do usuario e apresentacao visual do produto.</p>
+                </div>
+                <div class="projetos-lista">
+                    <article class="projeto-card">
+                        <video src="src/projetos/portifolio.mp4" class="projeto-img" autoplay loop muted playsinline></video>
+                        <div class="projeto-info">
+                            <h4>Portfolio Pessoal</h4>
+                            <p>Site responsivo em React para apresentar projetos, habilidades e experiencia profissional com identidade propria.</p>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
+                                <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript" class="skill-icon">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <video src="src/projetos/farmaexpress.mp4" class="projeto-img" autoplay loop muted playsinline></video>
+                        <div class="projeto-info">
+                            <h4>FarmaExpress</h4>
+                            <p>Plataforma com foco em experiencia de uso para facilitar acesso a medicamentos e agendamento de entrega.</p>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/html5.png" alt="HTML & CSS" title="HTML e CSS" class="skill-icon">
+                                <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript" class="skill-icon">
+                                <img src="src/icons/python.png" alt="Python" title="Python" class="skill-icon">
+                                <img src="src/icons/php.png" alt="PHP" title="PHP" class="skill-icon">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <video src="src/projetos/SGV Dashboard.mp4" class="projeto-img" autoplay loop muted playsinline></video>
+                        <div class="projeto-info">
+                            <h4>Dashboard Financeiro</h4>
+                            <p>Painel analitico com foco em visualizacao e acompanhamento de vendas usando React no front-end.</p>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
+                                <img src="src/icons/java.png" alt="Java" title="Java" class="skill-icon">
+                                <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="project-group">
+                <div class="group-header">
+                    <h3>Back-end</h3>
+                    <p>APIs, autenticacao, integracao com banco de dados e regras de negocio.</p>
+                </div>
+                <div class="projetos-lista">
+                    <article class="projeto-card">
+                        <video src="src/projetos/Pedidos Fast.mp4" class="projeto-img" autoplay loop muted playsinline></video>
+                        <div class="projeto-info">
+                            <h4>API de Agendamentos</h4>
+                            <p>API REST em Golang para gerenciamento de horarios e usuarios com integracao ao front-end.</p>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/go.png" alt="Golang" title="Golang" class="skill-icon">
+                                <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
+                                <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <video src="src/projetos/Login Seguro JWT.mp4" class="projeto-img" autoplay loop muted playsinline></video>
+                        <div class="projeto-info">
+                            <h4>Login Seguro JWT</h4>
+                            <p>API REST com autenticacao JWT usando Golang e interface em React para fluxo de login seguro.</p>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/go.png" alt="Golang" title="Golang" class="skill-icon">
+                                <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
+                                <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <video src="src/projetos/todolist.mp4" class="projeto-img" autoplay loop muted playsinline></video>
+                        <div class="projeto-info">
+                            <h4>Lista de Tarefas</h4>
+                            <p>Aplicacao CRUD com PHP e MySQL para gerenciamento de tarefas e organizacao do fluxo diario.</p>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/php.png" alt="PHP" title="PHP" class="skill-icon">
+                                <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="project-group">
+                <div class="group-header">
+                    <h3>WordPress</h3>
+                    <p>Projetos voltados para sites institucionais, paginas comerciais e construcao rapida com foco em entrega.</p>
+                </div>
+                <div class="projetos-lista single-project">
+                    <article class="projeto-card">
+                        <img src="src/certificados/wordpress.jpg" alt="Projeto WordPress" class="projeto-img">
+                        <div class="projeto-info">
+                            <h4>Sites em WordPress</h4>
+                            <p>Experiencia com WordPress e Elementor para criar paginas mais rapidas de publicar, editar e manter.</p>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/html5.png" alt="HTML & CSS" title="HTML e CSS" class="skill-icon">
+                                <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript" class="skill-icon">
+                                <img src="src/icons/react.png" alt="React" title="WordPress e Elementor" class="skill-icon">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="content-section contact-section">
+            <div class="section-heading">
+                <p class="section-kicker">Vamos conversar</p>
+                <h2>Contato e redes</h2>
+            </div>
+
+            <p class="contact-copy">Disponivel para projetos, oportunidades e colaboracoes em desenvolvimento de software.</p>
+
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.linkedin.com/in/matheus-santos-carvalho-88a610338" target="_blank" rel="noreferrer">
+                        <img src="src/redes sociais/link.png" alt="LinkedIn" class="social-icon">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/yubr02" target="_blank" rel="noreferrer">
+                        <img src="src/redes sociais/github.png" alt="GitHub" class="social-icon">
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/pitocodev" target="_blank" rel="noreferrer">
+                        <img src="src/redes sociais/instagram.png" alt="Instagram" class="social-icon">
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/Pitocodev" target="_blank" rel="noreferrer">
+                        <img src="src/redes sociais/x.png" alt="Twitter" class="social-icon">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@moon6948" target="_blank" rel="noreferrer">
+                        <img src="src/redes sociais/youtube.png" alt="YouTube" class="social-icon">
+                        <span>YouTube</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:matheus.sa.ca@hotmail.com">
+                        <img src="src/redes sociais/out.png" alt="Email" class="social-icon">
+                        <span>Email</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
     </main>
+
     <footer>
-        <p>© 2025 PitocoDev. Todos os direitos reservados</p>
+        <p>&copy; 2026 Matheus Santos Carvalho. Todos os direitos reservados.</p>
     </footer>
 </body>
-
 </html>
