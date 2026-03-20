@@ -233,6 +233,7 @@ main {
     background: rgba(8, 25, 45, 0.72);
     color: #dff7ff;
     font-weight: 600;
+    animation: float-badge 4.6s ease-in-out infinite;
 }
 
 .hero-panel {
@@ -342,6 +343,15 @@ main {
     border: 1px solid rgba(157, 214, 255, 0.1);
     color: #edf7ff;
     font-weight: 600;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+    animation: skill-appear 0.7s ease both;
+}
+
+.skills-list li:hover {
+    transform: translateY(-4px);
+    background: rgba(18, 38, 63, 0.96);
+    border-color: rgba(111, 231, 255, 0.34);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
 }
 
 .skill-icon,
@@ -354,6 +364,14 @@ main {
     background: #18314f;
     object-fit: contain;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.skills-list li:hover .skill-icon,
+.projeto-linguagens .skill-icon:hover {
+    transform: translateY(-2px) scale(1.12) rotate(-6deg);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.3);
+    filter: saturate(1.15);
 }
 
 .course-card ul {
@@ -515,6 +533,10 @@ main {
     margin-top: 1rem;
 }
 
+.projeto-linguagens .skill-icon {
+    animation: icon-pop 0.65s ease both;
+}
+
 .project-links {
     margin-top: 1rem;
 }
@@ -639,6 +661,41 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes float-badge {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes skill-appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes icon-pop {
+    from {
+        opacity: 0;
+        transform: scale(0.88);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
