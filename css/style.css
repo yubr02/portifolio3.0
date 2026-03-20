@@ -244,8 +244,8 @@ main {
 
 .foto-perfil {
     width: min(100%, 250px);
-    height: 300px; /* define altura do container */
-    object-fit: cover;
+    height: auto; /* define altura do container */
+    object-fit: contain;
     object-position: top; /* 🔥 isso resolve */
     margin: 0 auto;
     border-radius: 32px;
