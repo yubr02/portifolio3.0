@@ -243,7 +243,8 @@ main {
 }
 
 .foto-perfil {
-    width: min(100%, 260px);
+    width: min(80
+               %, 260px);
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     object-fit: cover;
