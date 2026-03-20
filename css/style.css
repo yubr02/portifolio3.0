@@ -243,10 +243,11 @@ main {
 }
 
 .foto-perfil {
-    width: min(100%, 200px);
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
+    width: min(100%, 250px);
+    height: 320px; /* altura maior */
     object-fit: cover;
+    object-position: top; /* foca mais no rosto e corpo */
+    margin: 0 auto;
     border-radius: 32px;
     border: 1px solid rgba(111, 231, 255, 0.22);
     box-shadow: 0 22px 38px rgba(0, 0, 0, 0.26);
