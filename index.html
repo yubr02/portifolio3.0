@@ -25,17 +25,23 @@
     <main>
         <section id="sobre" class="hero-section">
             <div class="hero-copy">
-                <p class="eyebrow">Desenvolvedor Full Stack em evolucao constante</p>
-                <h2>Construo interfaces claras, APIs solidas e projetos com foco em utilidade real.</h2>
+                <p class="eyebrow">Desenvolvedor Full Stack</p>
+                <h2>Especializado em APIs, sistemas web e solucoes reais.</h2>
                 <p class="hero-text">
                     Sou Matheus, estudante de Engenharia de Software e desenvolvedor com foco em
-                    resolver problemas de forma pratica. Gosto de entender o negocio, organizar a
-                    base tecnica e transformar ideia em produto funcional.
+                    resolver problemas de forma pratica. Gosto de transformar ideia em projeto
+                    funcional, conectando interface, regras de negocio e banco de dados com foco
+                    em resultado real.
                 </p>
+                <div class="hero-actions">
+                    <a href="#contato" class="cta-button cta-primary">Fale comigo</a>
+                    <a href="#projetos" class="cta-button cta-secondary">Ver projetos</a>
+                    <a href="mailto:matheus.sa.ca@hotmail.com" class="cta-button cta-ghost">Me contratar</a>
+                </div>
                 <div class="hero-highlights">
-                    <span>Front-end</span>
-                    <span>Back-end</span>
                     <span>Fullstack</span>
+                    <span>APIs</span>
+                    <span>Sistemas web</span>
                     <span>IA aplicada</span>
                 </div>
             </div>
@@ -160,20 +166,25 @@
         <section id="projetos" class="content-section">
             <div class="section-heading">
                 <p class="section-kicker">Portifolio organizado</p>
-                <h2>Projetos separados por especialidade</h2>
+                <h2>Projetos Fullstack</h2>
             </div>
 
             <div class="project-group">
                 <div class="group-header">
-                    <h3>Front-end</h3>
-                    <p>Interfaces, experiencia do usuario e apresentacao visual do produto.</p>
+                    <h3>Fullstack</h3>
+                    <p>Projetos que conectam interface, regras de negocio, autenticacao e persistencia de dados para entregar solucoes completas.</p>
                 </div>
                 <div class="projetos-lista">
                     <article class="projeto-card">
                         <video src="src/projetos/portifolio.mp4" class="projeto-img" autoplay loop muted playsinline></video>
                         <div class="projeto-info">
                             <h4>Portfolio Pessoal</h4>
-                            <p>Site responsivo em React para apresentar projetos, habilidades e experiencia profissional com identidade propria.</p>
+                            <ul class="project-points">
+                                <li><strong>Objetivo:</strong> apresentar minha experiencia, stack e projetos de forma clara para recrutadores e clientes.</li>
+                                <li><strong>O que desenvolvi:</strong> estrutura visual responsiva, organizacao de secoes estrategicas e uma navegacao mais intuitiva.</li>
+                                <li><strong>Tecnologias:</strong> React e JavaScript.</li>
+                                <li><strong>Resultado:</strong> um portfolio mais profissional, direto e preparado para conversao.</li>
+                            </ul>
                             <div class="projeto-linguagens">
                                 <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
                                 <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript" class="skill-icon">
@@ -185,7 +196,12 @@
                         <video src="src/projetos/SGV Dashboard.mp4" class="projeto-img" autoplay loop muted playsinline></video>
                         <div class="projeto-info">
                             <h4>Dashboard Financeiro</h4>
-                            <p>Painel analitico com foco em visualizacao e acompanhamento de vendas usando React no front-end.</p>
+                            <ul class="project-points">
+                                <li><strong>Objetivo:</strong> facilitar a leitura de dados financeiros e o acompanhamento de desempenho.</li>
+                                <li><strong>O que desenvolvi:</strong> painel com visualizacao de informacoes, integracao entre interface, logica e dados.</li>
+                                <li><strong>Tecnologias:</strong> React, Java e MySQL.</li>
+                                <li><strong>Resultado:</strong> uma base para monitoramento mais claro e apoio na tomada de decisao.</li>
+                            </ul>
                             <div class="projeto-linguagens">
                                 <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
                                 <img src="src/icons/java.png" alt="Java" title="Java" class="skill-icon">
@@ -193,20 +209,16 @@
                             </div>
                         </div>
                     </article>
-                </div>
-            </div>
-
-            <div class="project-group">
-                <div class="group-header">
-                    <h3>Back-end</h3>
-                    <p>APIs, autenticacao, integracao com banco de dados e regras de negocio.</p>
-                </div>
-                <div class="projetos-lista">
                     <article class="projeto-card">
                         <video src="src/projetos/Pedidos Fast.mp4" class="projeto-img" autoplay loop muted playsinline></video>
                         <div class="projeto-info">
                             <h4>API de Agendamentos</h4>
-                            <p>API REST em Golang para gerenciamento de horarios e usuarios com integracao ao front-end.</p>
+                            <ul class="project-points">
+                                <li><strong>Objetivo:</strong> organizar horarios e usuarios em uma aplicacao de agendamentos.</li>
+                                <li><strong>O que desenvolvi:</strong> API REST com regras de negocio, comunicacao com banco e integracao com o front-end.</li>
+                                <li><strong>Tecnologias:</strong> Golang, React e MySQL.</li>
+                                <li><strong>Resultado:</strong> fluxo mais estruturado para cadastro, consulta e gerenciamento de informacoes.</li>
+                            </ul>
                             <div class="projeto-linguagens">
                                 <img src="src/icons/go.png" alt="Golang" title="Golang" class="skill-icon">
                                 <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
@@ -219,7 +231,12 @@
                         <video src="src/projetos/Login Seguro JWT.mp4" class="projeto-img" autoplay loop muted playsinline></video>
                         <div class="projeto-info">
                             <h4>Login Seguro JWT</h4>
-                            <p>API REST com autenticacao JWT usando Golang e interface em React para fluxo de login seguro.</p>
+                            <ul class="project-points">
+                                <li><strong>Objetivo:</strong> criar um sistema de autenticacao mais seguro para acesso de usuarios.</li>
+                                <li><strong>O que desenvolvi:</strong> API REST com JWT, fluxo de login e integracao com interface para validacao de acesso.</li>
+                                <li><strong>Tecnologias:</strong> Golang, React e MySQL.</li>
+                                <li><strong>Resultado:</strong> uma base confiavel para controle de sessao e seguranca em sistemas web.</li>
+                            </ul>
                             <div class="projeto-linguagens">
                                 <img src="src/icons/go.png" alt="Golang" title="Golang" class="skill-icon">
                                 <img src="src/icons/react.png" alt="React" title="React" class="skill-icon">
@@ -227,21 +244,16 @@
                             </div>
                         </div>
                     </article>
-
-                </div>
-            </div>
-
-            <div class="project-group">
-                <div class="group-header">
-                    <h3>Fullstack</h3>
-                    <p>Projetos que conectam interface, regras de negocio e persistencia de dados em uma entrega mais completa.</p>
-                </div>
-                <div class="projetos-lista">
                     <article class="projeto-card">
                         <video src="src/projetos/todolist.mp4" class="projeto-img" autoplay loop muted playsinline></video>
                         <div class="projeto-info">
                             <h4>Lista de Tarefas</h4>
-                            <p>Aplicacao CRUD com PHP e MySQL para gerenciamento de tarefas, integrando interface, regras da aplicacao e banco de dados.</p>
+                            <ul class="project-points">
+                                <li><strong>Objetivo:</strong> facilitar a organizacao de tarefas do dia a dia em uma aplicacao simples e funcional.</li>
+                                <li><strong>O que desenvolvi:</strong> operacoes CRUD, interface de uso e conexao com banco de dados para persistencia das tarefas.</li>
+                                <li><strong>Tecnologias:</strong> PHP e MySQL.</li>
+                                <li><strong>Resultado:</strong> um sistema direto, util e focado em produtividade.</li>
+                            </ul>
                             <div class="projeto-linguagens">
                                 <img src="src/icons/php.png" alt="PHP" title="PHP" class="skill-icon">
                                 <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
@@ -253,7 +265,12 @@
                         <video src="src/projetos/farmaexpress.mp4" class="projeto-img" autoplay loop muted playsinline></video>
                         <div class="projeto-info">
                             <h4>FarmaExpress</h4>
-                            <p>Projeto com frente visual e estrutura de dados para facilitar acesso a medicamentos, reunindo experiencia do usuario e suporte funcional por tras.</p>
+                            <ul class="project-points">
+                                <li><strong>Objetivo:</strong> facilitar o acesso a medicamentos para pessoas com dificuldade de locomocao.</li>
+                                <li><strong>O que desenvolvi:</strong> estrutura de interface, organizacao de pedidos e base funcional para apoiar o fluxo do sistema.</li>
+                                <li><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Python, PHP e MySQL.</li>
+                                <li><strong>Resultado:</strong> um projeto com proposta social, utilidade real e integracao entre varias camadas da aplicacao.</li>
+                            </ul>
                             <div class="projeto-linguagens">
                                 <img src="src/icons/html5.png" alt="HTML & CSS" title="HTML e CSS" class="skill-icon">
                                 <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript" class="skill-icon">
@@ -270,10 +287,16 @@
         <section id="contato" class="content-section contact-section">
             <div class="section-heading">
                 <p class="section-kicker">Vamos conversar</p>
-                <h2>Contato e redes</h2>
+                <h2>Pronto para criar algo real</h2>
             </div>
 
-            <p class="contact-copy">Disponivel para projetos, oportunidades e colaboracoes em desenvolvimento de software.</p>
+            <p class="contact-copy">Se voce busca um Desenvolvedor Full Stack para construir APIs, sistemas web e solucoes praticas com foco em resultado, vamos conversar. Estou aberto a oportunidades, freelas e projetos com impacto real.</p>
+
+            <div class="contact-actions">
+                <a href="mailto:matheus.sa.ca@hotmail.com" class="cta-button cta-primary">Fale comigo</a>
+                <a href="#projetos" class="cta-button cta-secondary">Ver projetos</a>
+                <a href="https://www.linkedin.com/in/matheus-santos-carvalho-88a610338" target="_blank" rel="noreferrer" class="cta-button cta-ghost">Me contratar</a>
+            </div>
 
             <ul class="social-list">
                 <li>
