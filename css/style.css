@@ -360,10 +360,11 @@ main {
     height: 32px;
     margin-right: 0.7rem;
     border-radius: 50%;
-    padding: 4px;
-    background: #18314f;
+    padding: 0;
+    background: transparent;
     object-fit: contain;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    filter: saturate(1.2) contrast(1.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
 
@@ -371,7 +372,7 @@ main {
 .projeto-linguagens .skill-icon:hover {
     transform: translateY(-2px) scale(1.12) rotate(-6deg);
     box-shadow: 0 14px 24px rgba(0, 0, 0, 0.3);
-    filter: saturate(1.15);
+    filter: saturate(1.35) contrast(1.12);
 }
 
 .course-card ul {
@@ -609,24 +610,24 @@ footer {
     color: var(--muted);
 }
 
-.skill-icon[alt="JavaScript"] { background: #f7df1e; }
-.skill-icon[alt="Java"] { background: #ffffff; }
-.skill-icon[alt="Golang"] { background: #00add8; }
-.skill-icon[alt="HTML & CSS"] { background: #e34f26; }
-.skill-icon[alt="React"] { background: #61dafb; }
-.skill-icon[alt="Node.js"] { background: #339933; }
-.skill-icon[alt="PHP"] { background: #777bb4; }
-.skill-icon[alt="MySQL"] { background: #00758f; }
-.skill-icon[alt="Python"] { background: #3776ab; }
-.skill-icon[alt="Git"] { background: #f05032; }
+.skill-icon[alt="JavaScript"] { filter: saturate(1.28) contrast(1.1); }
+.skill-icon[alt="Java"] { filter: saturate(1.22) contrast(1.08); }
+.skill-icon[alt="Golang"] { filter: saturate(1.35) contrast(1.12); }
+.skill-icon[alt="HTML & CSS"] { filter: saturate(1.3) contrast(1.1); }
+.skill-icon[alt="React"] { filter: saturate(1.28) contrast(1.1); }
+.skill-icon[alt="Node.js"] { filter: saturate(1.28) contrast(1.1); }
+.skill-icon[alt="PHP"] { filter: saturate(1.24) contrast(1.08); }
+.skill-icon[alt="MySQL"] { filter: saturate(1.3) contrast(1.12); }
+.skill-icon[alt="Python"] { filter: saturate(1.26) contrast(1.1); }
+.skill-icon[alt="Git"] { filter: saturate(1.32) contrast(1.1); }
 
-.social-icon[alt="LinkedIn"] { background: #0077b5; }
-.social-icon[alt="WhatsApp"] { background: #25d366; }
-.social-icon[alt="GitHub"] { background: #ffffff; }
-.social-icon[alt="Instagram"] { background: #ffffff; }
-.social-icon[alt="Twitter"] { background: #ffffff; }
-.social-icon[alt="YouTube"] { background: #ffffff; }
-.social-icon[alt="Email"] { background: #ffffff; }
+.social-icon[alt="LinkedIn"] { filter: saturate(1.28) contrast(1.08); }
+.social-icon[alt="WhatsApp"] { filter: saturate(1.35) contrast(1.08); }
+.social-icon[alt="GitHub"] { filter: saturate(1.12) contrast(1.04); }
+.social-icon[alt="Instagram"] { filter: saturate(1.18) contrast(1.06); }
+.social-icon[alt="Twitter"] { filter: saturate(1.18) contrast(1.06); }
+.social-icon[alt="YouTube"] { filter: saturate(1.22) contrast(1.08); }
+.social-icon[alt="Email"] { filter: saturate(1.18) contrast(1.06); }
 
 @keyframes fade-up {
     from {
