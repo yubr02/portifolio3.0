@@ -197,18 +197,19 @@ main {
 .cta-primary {
     background: linear-gradient(135deg, #ff7b57, #ff5f3d);
     color: #fff;
-    box-shadow: 0 14px 28px rgba(255, 95, 61, 0.3);
+    box-shadow: 0 18px 34px rgba(255, 95, 61, 0.38);
+    border-color: rgba(255, 202, 190, 0.2);
 }
 
 .cta-secondary {
-    background: rgba(111, 231, 255, 0.12);
-    border-color: rgba(111, 231, 255, 0.22);
-    color: #dff8ff;
+    background: rgba(111, 231, 255, 0.16);
+    border-color: rgba(111, 231, 255, 0.34);
+    color: #f3fcff;
 }
 
 .cta-ghost {
-    background: rgba(255, 255, 255, 0.03);
-    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.2);
     color: var(--text);
 }
 
@@ -391,6 +392,7 @@ main {
     transform: translateY(-6px);
     border-color: rgba(111, 231, 255, 0.34);
     box-shadow: 0 22px 42px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180deg, rgba(19, 42, 70, 0.98), rgba(9, 23, 39, 0.98));
 }
 
 .projeto-card::after {
@@ -437,6 +439,16 @@ main {
 
 .projeto-info h4 {
     font-size: 1.15rem;
+}
+
+.project-context {
+    margin: 0 0 0.95rem;
+    padding: 0.9rem 1rem;
+    border-left: 3px solid rgba(255, 107, 74, 0.85);
+    border-radius: 0 14px 14px 0;
+    background: rgba(255, 255, 255, 0.04);
+    color: #e8f1fa;
+    line-height: 1.65;
 }
 
 .project-points {
@@ -513,6 +525,7 @@ main {
     transform: translateY(-2px);
     background: rgba(255, 107, 74, 0.14);
     border-color: rgba(255, 107, 74, 0.28);
+    color: #fff;
 }
 
 .contact-section {
