@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus | Portfolio Full Stack</title>
+    <script>
+        (function () {
+            try {
+                var savedTheme = localStorage.getItem("portfolio-theme");
+                var theme = savedTheme || "dark";
+                document.documentElement.setAttribute("data-theme", theme);
+            } catch (error) {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        }());
+    </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,14 +23,20 @@
             <span class="brand-kicker">Portfolio</span>
             <h1>Matheus Santos Carvalho</h1>
         </div>
-        <nav class="site-nav">
-            <a href="#sobre">Sobre</a>
-            <a href="#skills">Skills</a>
-            <a href="#cursos">Cursos</a>
-            <a href="#mindset">Mindset</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="header-actions">
+            <nav class="site-nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#skills">Skills</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#mindset">Mindset</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button type="button" class="theme-toggle" aria-label="Alternar modo claro e escuro" aria-pressed="false">
+                <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+                <span class="theme-toggle-text">Modo claro</span>
+            </button>
+        </div>
     </header>
 
     <main>
@@ -87,7 +104,7 @@
                     <ul class="skills-list">
                         <li><img src="src/icons/git.png" alt="Git" class="skill-icon">Git e GitHub</li>
                         <li><img src="src/icons/python.png" alt="Python" class="skill-icon">IA com Python</li>
-                        <li><img src="src/icons/react.png" alt="React" class="skill-icon">Fullstack e integracao</li>
+                        <li><img src="src/icons/icons8-inteligência-artificial.gif" alt="Inteligencia Artificial" class="skill-icon">APIs e IA aplicada</li>
                     </ul>
                 </article>
             </div>
@@ -232,6 +249,41 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/yubr02/api-de-pedidos" target="_blank" rel="noreferrer" class="project-link">Ver repositorio</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card featured-project ai-project">
+                        <video src="src/projetos/Login _ Help Desk com IA - Opera 2026-03-21 19-01-49.mp4" class="projeto-img" autoplay loop muted playsinline></video>
+                        <div class="projeto-info">
+                            <h4>Help Desk com IA</h4>
+                            <p class="project-context">Projeto criado para agilizar o suporte, organizar chamados e usar inteligencia artificial para tornar o atendimento mais rapido, claro e eficiente.</p>
+                            <div class="project-depth">
+                                <div class="depth-item">
+                                    <span>Problema</span>
+                                    <p>Equipes de suporte perdem tempo com triagem manual, respostas repetidas e dificuldade para priorizar chamados com rapidez.</p>
+                                </div>
+                                <div class="depth-item">
+                                    <span>Arquitetura</span>
+                                    <p>Estruturei uma base fullstack com interface web, fluxo de autenticacao, organizacao de tickets e camada de IA para apoiar o atendimento.</p>
+                                </div>
+                                <div class="depth-item">
+                                    <span>Solucao</span>
+                                    <p>O sistema centraliza os chamados, melhora a visualizacao do suporte e adiciona apoio inteligente para orientar respostas e acelerar a resolucao.</p>
+                                </div>
+                                <div class="depth-item">
+                                    <span>Destaque IA</span>
+                                    <p>Esse foi meu primeiro projeto com IA aplicada, conectando automacao, experiencia do usuario e produtividade real em um unico sistema.</p>
+                                </div>
+                            </div>
+                            <div class="projeto-linguagens">
+                                <img src="src/icons/javascript.png" alt="JavaScript" title="JavaScript" class="skill-icon">
+                                <img src="src/icons/mysql.png" alt="MySQL" title="MySQL" class="skill-icon">
+                                <img src="src/icons/python.png" alt="Python" title="Python" class="skill-icon">
+                                <img src="src/icons/icons8-inteligência-artificial.gif" alt="Inteligencia Artificial" title="Inteligencia Artificial" class="skill-icon">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yubr02/help-desk/tree/main" target="_blank" rel="noreferrer" class="project-link">Ver repositorio</a>
                             </div>
                         </div>
                     </article>
@@ -393,5 +445,41 @@
     <footer>
         <p>&copy; 2026 Matheus Santos Carvalho. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var toggle = document.querySelector(".theme-toggle");
+
+            if (!toggle) {
+                return;
+            }
+
+            var icon = toggle.querySelector(".theme-toggle-icon");
+            var text = toggle.querySelector(".theme-toggle-text");
+
+            function applyTheme(theme) {
+                var isLight = theme === "light";
+                root.setAttribute("data-theme", theme);
+                toggle.setAttribute("aria-pressed", String(isLight));
+                icon.textContent = isLight ? "☾" : "☀";
+                text.textContent = isLight ? "Modo escuro" : "Modo claro";
+            }
+
+            applyTheme(root.getAttribute("data-theme") || "dark");
+
+            toggle.addEventListener("click", function () {
+                var currentTheme = root.getAttribute("data-theme") || "dark";
+                var nextTheme = currentTheme === "light" ? "dark" : "light";
+
+                applyTheme(nextTheme);
+
+                try {
+                    localStorage.setItem("portfolio-theme", nextTheme);
+                } catch (error) {
+                    console.warn("Nao foi possivel salvar o tema.", error);
+                }
+            });
+        }());
+    </script>
 </body>
 </html>
