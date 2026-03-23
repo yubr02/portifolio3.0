@@ -524,7 +524,6 @@ main {
 }
 
 .featured-project {
-    grid-column: span 2;
     border-color: rgba(255, 107, 74, 0.24);
     box-shadow: 0 26px 54px rgba(0, 0, 0, 0.36);
 }
@@ -667,7 +666,7 @@ main {
 
 .project-summary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 0.9rem;
     margin: 0;
 }
@@ -708,22 +707,6 @@ main {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-}
-
-.project-points {
-    display: grid;
-    gap: 0.75rem;
-    margin: 0;
-    padding-left: 1.15rem;
-    color: var(--muted);
-}
-
-.project-points li {
-    line-height: 1.6;
-}
-
-.project-points strong {
-    color: var(--text);
 }
 
 .project-depth {
@@ -865,7 +848,6 @@ footer {
 }
 
 :root[data-theme="light"] .depth-item p,
-:root[data-theme="light"] .project-points,
 :root[data-theme="light"] .social-list li a span,
 :root[data-theme="light"] .skills-list li {
     color: var(--text);
@@ -1111,9 +1093,6 @@ footer {
         max-width: none;
     }
 
-    .featured-project {
-        grid-column: span 1;
-    }
 }
 
 @media (max-width: 720px) {
