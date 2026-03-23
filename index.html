@@ -25,7 +25,12 @@
             <h1>Matheus Santos Carvalho</h1>
         </div>
         <div class="header-actions">
-            <nav class="site-nav">
+            <button type="button" class="menu-toggle" aria-label="Abrir menu de navegacao" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav">
                 <a href="#sobre">Sobre</a>
                 <a href="#skills">Skills</a>
                 <a href="#cursos">Cursos</a>
@@ -546,6 +551,19 @@
         (function () {
             var root = document.documentElement;
             var toggle = document.querySelector(".theme-toggle");
+            var menuToggle = document.querySelector(".menu-toggle");
+            var nav = document.querySelector(".site-nav");
+
+            function syncMobileNav() {
+                if (!menuToggle || !nav) {
+                    return;
+                }
+
+                if (window.innerWidth > 720) {
+                    menuToggle.setAttribute("aria-expanded", "false");
+                    nav.classList.remove("is-open");
+                }
+            }
 
             if (!toggle) {
                 return;
@@ -576,6 +594,25 @@
                     console.warn("Nao foi possivel salvar o tema.", error);
                 }
             });
+
+            if (menuToggle && nav) {
+                menuToggle.addEventListener("click", function () {
+                    var isOpen = nav.classList.toggle("is-open");
+                    menuToggle.setAttribute("aria-expanded", String(isOpen));
+                });
+
+                nav.querySelectorAll("a").forEach(function (link) {
+                    link.addEventListener("click", function () {
+                        if (window.innerWidth <= 720) {
+                            nav.classList.remove("is-open");
+                            menuToggle.setAttribute("aria-expanded", "false");
+                        }
+                    });
+                });
+
+                window.addEventListener("resize", syncMobileNav);
+                syncMobileNav();
+            }
         }());
     </script>
 </body>
