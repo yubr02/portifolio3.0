@@ -1,0 +1,15 @@
+.key-scene{min-height:450px;margin-top:50px;padding:45px 35px 65px;border:0;background:radial-gradient(ellipse at 50% 52%,#ec243414,transparent 52%)}
+.keys{width:min(100%,1040px);margin:auto;column-gap:16px;row-gap:38px;transform:rotateX(2deg);transform-origin:center}
+.key{min-height:94px;padding:14px 15px;border-radius:8px;border-color:#49464a;background:linear-gradient(145deg,#29282b,#151517);box-shadow:0 calc(var(--h) * .62) 0 #090909,0 calc(var(--h) + 8px) 22px #000;transform:translateZ(calc(var(--h) * .72))}
+.key img{top:12px;right:13px;width:31px;height:31px;filter:none;opacity:1}
+.key strong{top:14px;right:14px;font-size:15px;color:#969196}.key>b{font-size:13px;font-weight:600;text-shadow:0 1px 4px #000}.key small{font-size:8px;margin-top:4px;color:#aaa5aa;letter-spacing:.04em}
+.key:hover,.key.pressed{z-index:3;transform:translateZ(calc(var(--h) + 18px)) rotateX(-5deg);box-shadow:0 calc(var(--h) * .7) 0 #090909,0 calc(var(--h) + 20px) 30px #ec243429}
+@media(max-width:900px){.key-scene{min-height:520px;padding-inline:24px}.keys{width:min(100%,720px);column-gap:13px;row-gap:36px;transform:rotateX(1deg)}.key{min-height:88px}}
+@media(max-width:680px){.key-scene{min-height:560px;padding:38px 14px 55px}.keys{grid-template-columns:repeat(3,1fr);column-gap:10px;row-gap:32px;transform:none}.key{min-height:76px;padding:10px}.key.wide{grid-column:span 2}.key img{width:24px;height:24px;top:9px;right:9px}.key>b{font-size:10px}.key small{font-size:7px}}
+
+/* Logo personalizada: coloque o arquivo em foto/logo.png */
+.logo.has-image{font-size:0;gap:0}.logo.has-image>span{display:none}.logo.has-image i{width:112px;height:46px;border:0;clip-path:none;background:url('../foto/logo.png') center/contain no-repeat;color:transparent}
+footer .logo.has-image i{width:96px;height:42px}
+@media(max-width:680px){.logo.has-image i{width:92px;height:40px}}
+
+.social a,.actions .square{display:inline-flex;align-items:center;gap:9px}.social a img{width:16px;height:16px;object-fit:contain;filter:none;transition:transform .25s}.social a:hover img{transform:translateY(-2px) scale(1.12)}.actions .square img{width:21px;height:21px;object-fit:contain;filter:none}
