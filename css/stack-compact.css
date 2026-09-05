@@ -13,3 +13,5 @@ footer .logo.has-image i{width:96px;height:42px}
 @media(max-width:680px){.logo.has-image i{width:92px;height:40px}}
 
 .social a,.actions .square{display:inline-flex;align-items:center;gap:9px}.social a img{width:16px;height:16px;object-fit:contain;filter:none;transition:transform .25s}.social a:hover img{transform:translateY(-2px) scale(1.12)}.actions .square img{width:21px;height:21px;object-fit:contain;filter:none}
+.info>a{display:inline-flex;align-items:center;gap:8px}.info>a img{width:15px;height:15px;object-fit:contain;filter:none;transition:transform .25s}.info>a:hover img{transform:scale(1.12) rotate(-4deg)}
+.info .pills span{display:inline-flex;align-items:center;gap:7px}.info .pills span img{width:14px;height:14px;object-fit:contain;filter:none}

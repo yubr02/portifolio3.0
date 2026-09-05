@@ -7,7 +7,7 @@ const socialIcons=[
   {match:'linkedin.com',src:'src/redes sociais/link.png',alt:'LinkedIn'},
   {match:'wa.me',src:'src/icons/whatsapp.svg',alt:'WhatsApp'}
 ];
-document.querySelectorAll('.social a,.actions .square').forEach(link=>{const icon=socialIcons.find(item=>link.href.includes(item.match));if(!icon)return;const image=document.createElement('img');image.src=icon.src;image.alt='';image.setAttribute('aria-hidden','true');link.prepend(image);if(link.classList.contains('square'))link.childNodes.forEach(node=>{if(node.nodeType===Node.TEXT_NODE)node.textContent=''})});
+document.querySelectorAll('.social a,.actions .square,.info a').forEach(link=>{const icon=socialIcons.find(item=>link.href.includes(item.match));if(!icon)return;const image=document.createElement('img');image.src=icon.src;image.alt='';image.setAttribute('aria-hidden','true');link.prepend(image);if(link.classList.contains('square'))link.childNodes.forEach(node=>{if(node.nodeType===Node.TEXT_NODE)node.textContent=''})});
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const menu=document.querySelector('.menu'),nav=document.querySelector('nav');
 menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
@@ -18,6 +18,7 @@ document.querySelectorAll('.reveal').forEach(element=>observer.observe(element))
 
 const technologyIcons={HTML:'html5.svg',CSS:'css.svg',JavaScript:'javascript.svg',React:'react.svg',Tailwind:'tailwindcss.svg',PHP:'php.svg',Python:'python.svg',Java:'openjdk.svg','Node.js':'nodedotjs.svg',MySQL:'mysql.svg',Git:'git.svg',GitHub:'github.svg',Docker:'docker.svg',Go:'go.svg'};
 document.querySelectorAll('.key').forEach(key=>{const name=key.querySelector('b').textContent.trim();let icon=key.querySelector('img');if(!icon){icon=document.createElement('img');key.querySelector('strong')?.remove();key.prepend(icon)}icon.src=`src/icons/${technologyIcons[name]}`;icon.alt=`Logo ${name}`});
+document.querySelectorAll('.info .pills span').forEach(tag=>{const name=tag.textContent.trim();const file=technologyIcons[name];if(!file)return;const icon=document.createElement('img');icon.src=`src/icons/${file}`;icon.alt='';icon.setAttribute('aria-hidden','true');tag.prepend(icon)});
 
 const scene=document.querySelector('.key-scene');
 if(!reduced)scene.addEventListener('pointermove',event=>{const box=scene.getBoundingClientRect();scene.style.setProperty('--rx',`${(event.clientY-box.top)/box.height*-5+2.5}deg`);scene.style.setProperty('--ry',`${(event.clientX-box.left)/box.width*8-4}deg`)});
